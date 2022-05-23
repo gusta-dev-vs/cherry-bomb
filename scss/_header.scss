@@ -1,0 +1,54 @@
+.navegador{
+    background-image: linear-gradient(purple, rgb(202, 206, 182))  !important;
+    @keyframes aparecer {
+    0% {opacity: 100%}
+    25% {opacity: 75%}
+    50% {opacity: 50%}
+    75% {opacity: 25%}
+    100% {opacity: 0%}
+  }
+  }
+
+.navegador {
+    width: 99%;
+  }
+  
+  .menu li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+  a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: xx-large;
+  }
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+  li {
+    list-style-type:lower-greek;
+    display: block;
+    background-color: #320d6d;
+    border: solid;
+    border-color: #136f63;
+  
+   }
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+
+  .navegador {
+      display: flex;
+      border: solid;
+      border-color: #320d6d;
+      margin: 10px 10px 10px 10px;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-between;
+      align-content: stretch;
+      flex-direction: row;
+  }  
