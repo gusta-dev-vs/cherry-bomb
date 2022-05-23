@@ -1,28 +1,15 @@
-/* .container {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-  grid-template-rows: 0.2fr 1.6fr 0.8fr 0.2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "navegador navegador navegador navegador"
-    "main-imagen main-imagen main-imagen main-imagen"
-    "products products aside aside"
-    "footer footer footer footer";
-} */
-
-
 
 .flexmonkey{
   display: flex;
 }
 
 .king{
-  background-color: #d90429;
+  background-color: none;
 }
 
 .navegador {
-  width: 100%;
+  background-image: linear-gradient(purple, #caceb6) !important; 
+  width: 99%;
   grid-area: navegador;
 }
 
@@ -83,7 +70,9 @@
   font-family: fantasy;
   font-size: xx-large;
 }
-
+.menu li:hover .submenu {
+  display: block;
+}
 .submenu {
   display: none;
   position: absolute;
@@ -94,9 +83,7 @@
   border: solid;
   border-color: #136f63;
 }
-.menu li:hover .submenu {
-  display: block;
-}
+
 
 .navegador {
     display: flex;
@@ -372,7 +359,7 @@ ul {
 }
 #sektor {
   border-radius: 1%;
-  width: 1330px;
+  width: 1335px;
   height: 700px;
 }
 .orange2andhalf {
@@ -486,6 +473,77 @@ ul {
 
 @media screen and (min-width: 1024px) {
 a {
-    background-color:black !important;
+    background-color:none !important;
 } 
  }
+
+ .will{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+ }
+
+
+.contactflexo{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: center;
+}
+.local4{
+  width: 992px;
+  height: 424px;
+}
+.local3{
+  width: 878px;
+  height: 424px;
+}
+
+.local1{
+  width: 200 ;
+  height: 200 ;
+}
+.local2{
+  width: 1270px ;
+  height: 449px ;
+}
+
+.flexmonkey{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flexmonkey2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.flexmonkey3{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+
+}
+
+.flexmonkey4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+
+}
+
+.flexmonkey5{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+

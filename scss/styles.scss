@@ -3,21 +3,24 @@
 @import "variables" ;
 
 
+.flexmonkey{
+  display: flex;
+}
+
+@keyframes aparecer {
+   0% {opacity: 100%}
+   25% {opacity: 75%}
+   50% {opacity: 50%}
+   75% {opacity: 25%}
+   100% {opacity: 0%}
+}
+
 .beta{
   animation-name: aparecer;
   animation-delay: 5s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-
-.king{
-  background-color: #d90429;
-}
-
-.main-imagen {
-    display: flex;
-    align-items: center;
 }
 
 #main {
@@ -34,22 +37,59 @@
   height: 87px;
 }
 
+.menu li {
+  display: inline-block;
+  position: relative;
+  padding: 10px 10px;
+a {
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+&:hover .submenu {
+  display: block;
+
+}
+
+}
+.submenu {
+  display: none;
+  position: absolute;
+  li {
+  display: block;
+  background-color: #320d6d;
+  border: solid;
+  border-color: #136f63;
+}
+}
+
+.navegador {
+    background-image: linear-gradient(purple, #caceb6) !important; 
+    display: flex;
+    border: solid;
+    border-color: #320d6d;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-direction: row;
+   }
 
 .edward {
-  color: purple;
+  color: $colorTerciario;
  
 }
 
 .edward2 {
-  color: purple;
+  color: $colorTerciario;
  
 }
 
 .edward3{
-  color: purple;
+  color: $colorTerciario;
 
 }
-
 
 .charly li {
   text-decoration: none;
@@ -64,6 +104,7 @@
   height: 600px;
 }
 
+
 .jhonnie {
   width: 200px;
   height: 200px;
@@ -74,22 +115,16 @@
 .king {
   text-align: center;
 }
+.london {
+  background-color: $colorPrincipal;
+}
 
 .londond2 {
   border-radius: 10%;
   width: 10%;
 }
 
-.flexmonkey{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-around;
-}
-
 #monkey {
-
   color: aqua;
   text-align: center;
   font-size: x-large;
@@ -117,8 +152,9 @@
   font-size: x-large;
 }
 
+
 .nuts {
-  background-color: black;
+  background-color: $colorPrincipal;
 }
 .nuts2 {
   border-radius: 10%;
@@ -126,18 +162,18 @@
 }
 .i1 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i2 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i3 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i4 {
   border-radius: 1%;
@@ -146,8 +182,8 @@
 }
 .i5 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i6 {
   border-radius: 1%;
@@ -156,18 +192,18 @@
 }
 .i7 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;}
-
+  width: 662px;
+  height: 400px;
+}
 .i8 {
   border-radius: 1%;
   width: 662px;
   height: 400px;
 }
 .i9 {
- border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  border-radius: 1%;
+  width: 662px;
+  height: 400px;
 }
 .i10 {
   border-radius: 1%;
@@ -176,29 +212,28 @@
 }
 .i11 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
-
+  width: 662px;
+  height: 400px;
 }
 .i12 {
- border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  border-radius: 1%;
+  width: 662px;
+  height: 400px;
 }
 .i13 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i14 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i15 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px;
+  width: 662px;
+  height: 400px;
 }
 .i16 {
   border-radius: 1%;
@@ -272,9 +307,21 @@
   width: 662px;
   height: 400px;
 }
+.orange {
+  background-color: $colorPrincipal;
+}
+.orange2 {
+  border-radius: 10%;
+  width: 5%;
+}
 
+.orange3 {
+  border-radius: 1%;
+  width: 1330px;
+  height: 700px;
+}
 .pudding {
-  background-color: black;
+  background-color: $colorPrincipal;
 }
 .pudding2 {
   border-radius: 10%;
@@ -284,12 +331,14 @@
   color: greenyellow;
 }
 #sektor {
-
   border-radius: 1%;
   width: 1330px;
   height: 700px;
 }
-
+.orange2andhalf {
+  color: aqua;
+  text-align: center;
+}
 .londond3 {
   display: flex;
   justify-content: center;
@@ -299,14 +348,14 @@
 }
 
 .robert {
-  background-color: black;
+  background-color: $colorPrincipal;
 }
 .cyrax {
   border-radius: 10%;
   width: 5%;
 }
 .smoke {
-  color: blueviolet;
+  color: chartreuse;
   text-align: center;
 }
 
@@ -329,45 +378,32 @@
     text-align: center;
     display: flex;
     }
- 
-  .edward2 {
-    background-image: none;
-    color: #b9d2b1;
+    
+  .alpha {
+    background-color: $colorSecundario !important;
   }
-  .edward {
-    background-image: none;
-    color: #b9d2b1;
-  }
-
-  }
-
+}
  
 @media screen and (max-width: 1200px) {
 
-
   .edward {
-    color: rgb(55, 0, 255);
     background-image: none;
+    color: blue;
   }
-
   .edward2 {
-  
-    color: rgb(55, 0, 255);
+    background-image: none;
+    color: blue;
   }
-
-  .edward3{
-    color:rgb(55, 0, 255 );
+  .edward3 {
+    background-image: none;
+    color: blue;
   }
   
 }
 
 @media screen and (min-width: 1024px) {
+  .alpha{
+    background-color: $colorPrincipal;
+  }
 
-  .alpha {
-    background-color:white !important;
-
-}}
-// .alpha{
-//   background-color: white;
-// }
-
+}

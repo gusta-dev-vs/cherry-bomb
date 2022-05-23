@@ -1,1 +1,14 @@
 
+$colorPrincipal:black;
+
+$colorSecundario:white;
+
+$colorTerciario: purple;
+
+$promocion: descuentos;
+
+alpha{
+    @if $promocion == descuentos {background-color: black;}
+    @else if $promocion == promociones {background-color: aqua;}
+    @else {background-color: bisque;}
+}

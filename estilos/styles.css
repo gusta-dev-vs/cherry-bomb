@@ -61,19 +61,34 @@
   width: 1330px;
   height: 700px; }
 
+.orange2andhalf {
+  color: aqua;
+  text-align: center; }
+
+alpha {
+  background-color: black; }
+
+.flexmonkey {
+  display: flex; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 100%; }
+  25% {
+    opacity: 75%; }
+  50% {
+    opacity: 50%; }
+  75% {
+    opacity: 25%; }
+  100% {
+    opacity: 0%; } }
+
 .beta {
   animation-name: aparecer;
   animation-delay: 5s;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
-
-.king {
-  background-color: #d90429; }
-
-.main-imagen {
-  display: flex;
-  align-items: center; }
 
 #main {
   border-radius: 90%;
@@ -86,6 +101,38 @@
   border-radius: 70%;
   width: 113px;
   height: 87px; }
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  padding: 10px 10px; }
+  .menu li a {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: xx-large; }
+  .menu li:hover .submenu {
+    display: block; }
+
+.submenu {
+  display: none;
+  position: absolute; }
+  .submenu li {
+    display: block;
+    background-color: #320d6d;
+    border: solid;
+    border-color: #136f63; }
+
+.navegador {
+  background-image: linear-gradient(purple, #caceb6) !important;
+  display: flex;
+  border: solid;
+  border-color: #320d6d;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-direction: row; }
 
 .edward {
   color: purple; }
@@ -116,16 +163,12 @@
 .king {
   text-align: center; }
 
+.london {
+  background-color: black; }
+
 .londond2 {
   border-radius: 10%;
   width: 10%; }
-
-.flexmonkey {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: space-around; }
 
 #monkey {
   color: aqua;
@@ -161,18 +204,18 @@
 
 .i1 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i2 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i3 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i4 {
   border-radius: 1%;
@@ -181,8 +224,8 @@
 
 .i5 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i6 {
   border-radius: 1%;
@@ -191,8 +234,8 @@
 
 .i7 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i8 {
   border-radius: 1%;
@@ -201,8 +244,8 @@
 
 .i9 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i10 {
   border-radius: 1%;
@@ -211,28 +254,28 @@
 
 .i11 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i12 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i13 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i14 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i15 {
   border-radius: 1%;
-  width: 600px;
-  height: 450px; }
+  width: 662px;
+  height: 400px; }
 
 .i16 {
   border-radius: 1%;
@@ -304,6 +347,18 @@
   width: 662px;
   height: 400px; }
 
+.orange {
+  background-color: black; }
+
+.orange2 {
+  border-radius: 10%;
+  width: 5%; }
+
+.orange3 {
+  border-radius: 1%;
+  width: 1330px;
+  height: 700px; }
+
 .pudding {
   background-color: black; }
 
@@ -318,6 +373,10 @@
   border-radius: 1%;
   width: 1330px;
   height: 700px; }
+
+.orange2andhalf {
+  color: aqua;
+  text-align: center; }
 
 .londond3 {
   display: flex;
@@ -354,22 +413,20 @@
     width: 99% !important;
     text-align: center;
     display: flex; }
-  .edward2 {
-    background-image: none;
-    color: #b9d2b1; }
-  .edward {
-    background-image: none;
-    color: #b9d2b1; } }
+  .alpha {
+    background-color: white !important; } }
 
 @media screen and (max-width: 1200px) {
   .edward {
-    color: #3700ff;
-    background-image: none; }
+    background-image: none;
+    color: blue; }
   .edward2 {
-    color: #3700ff; }
+    background-image: none;
+    color: blue; }
   .edward3 {
-    color: #3700ff; } }
+    background-image: none;
+    color: blue; } }
 
 @media screen and (min-width: 1024px) {
   .alpha {
-    background-color: white !important; } }
+    background-color: black; } }
