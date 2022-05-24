@@ -494,22 +494,35 @@ a {
   justify-content: center;
 }
 .local4{
-  width: 992px;
-  height: 424px;
+  width: 900px ;
+  height: 600px ;
 }
 .local3{
-  width: 878px;
-  height: 424px;
+  width: 900px ;
+  height: 600px ;
 }
 
 .local1{
-  width: 200 ;
-  height: 200 ;
+  width: 900px ;
+  height: 600px ;
 }
 .local2{
-  width: 1270px ;
-  height: 449px ;
+  width: 900px ;
+  height: 600px ;}
+
+.flexgale{
+  display: flex;
+
 }
+
+.flexgale{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 
 .flexmonkey{
   display: flex;
